@@ -40,7 +40,12 @@ export default function Hero() {
         {displayedRoles.map((role, index) => (
           <p key={index} className="text-white">{role}</p>
         ))}
-        {currentText && <p className="text-white">{currentText}</p>}
+        {currentText && (
+  <p className="text-white">
+    {currentText}
+    <span className="cursor"></span>
+  </p>
+)}
       </div>
 
       <div className="mt-10 space-x-4">

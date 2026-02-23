@@ -18,3 +18,15 @@
 html {
   scroll-behavior: smooth;
 }
+.cursor {
+  display: inline-block;
+  width: 8px;
+  background-color: #3b82f6;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
