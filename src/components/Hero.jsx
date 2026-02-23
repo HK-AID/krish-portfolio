@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 
 export default function Hero() {
+
   const roles = [
     "Java Backend Developer",
     "Spring Boot Developer",
@@ -19,7 +20,7 @@ export default function Hero() {
         const timeout = setTimeout(() => {
           setCurrentText((prev) => prev + roles[roleIndex][charIndex])
           setCharIndex((prev) => prev + 1)
-        }, 40)
+        }, 30)
         return () => clearTimeout(timeout)
       } else {
         setDisplayedRoles((prev) => [...prev, currentText])
@@ -32,6 +33,22 @@ export default function Hero() {
 
   return (
     <section className="text-center py-32 px-4">
+
+      {/* Profile Picture */}
+      <div className="flex justify-center mb-8">
+        <div className="relative w-44 h-44 rounded-full p-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 animate-pulse">
+
+          <div className="w-full h-full rounded-full overflow-hidden border-4 border-slate-950">
+            <img
+              src="/profile.jpg"
+              alt="Harikrishnaa"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+        </div>
+      </div>
+
       <h2 className="text-5xl font-extrabold mb-6">
         Hi, I'm <span className="text-blue-400">Harikrishnaa</span> 👋
       </h2>
@@ -41,11 +58,11 @@ export default function Hero() {
           <p key={index} className="text-white">{role}</p>
         ))}
         {currentText && (
-  <p className="text-white">
-    {currentText}
-    <span className="cursor"></span>
-  </p>
-)}
+          <p className="text-white">
+            {currentText}
+            <span className="cursor"></span>
+          </p>
+        )}
       </div>
 
       <div className="mt-10 space-x-4">
