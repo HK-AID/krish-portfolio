@@ -2,13 +2,14 @@ export default function Hero() {
   return (
     <section className="text-center py-32 px-4">
       <h2 className="text-5xl font-extrabold mb-6">
-        Hi, I'm <span className="text-blue-400">Krish</span> 👋
+        Hi, I'm <span className="text-blue-400">Harikrishnaa</span> 👋
       </h2>
 
       <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-        Aspiring Backend Developer specializing in 
-        <span className="text-white"> Java, Spring Boot, REST APIs, and SQL.</span>
-      </p>
+        Final-year CSE student with strong skills in 
+        <span className="text-white"> Java, Python, and Data Structures.</span>
+        Passionate about Backend Development and AI-driven applications.
+        </p>
 
       <div className="mt-8 space-x-4">
 
