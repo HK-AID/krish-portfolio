@@ -35,19 +35,15 @@ export default function Hero() {
     <section className="text-center py-32 px-4">
 
       {/* Profile Picture */}
-      <div className="flex justify-center mb-8">
-        <div className="relative w-44 h-44 rounded-full p-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-blue-500 animate-pulse">
-
-          <div className="w-full h-full rounded-full overflow-hidden border-4 border-slate-950">
+        <div className="flex justify-center mb-10">
+        <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-slate-800">
             <img
-              src="/profile.jpg"
-              alt="Harikrishnaa"
-              className="w-full h-full object-cover"
+            src="/profile.jpg"
+            alt="Harikrishnaa"
+            className="w-full h-full object-contain bg-slate-900"
             />
-          </div>
-
         </div>
-      </div>
+        </div>
 
       <h2 className="text-5xl font-extrabold mb-6">
         Hi, I'm <span className="text-blue-400">Harikrishnaa</span> 👋
